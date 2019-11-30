@@ -19,4 +19,17 @@ function register_facebook_widget() {
     register_widget('FB_Widget');
 }
 
+function fbl_admin_menu_info() {
+    add_menu_page('Facebook Like Button', 'Facebook Like', 'manage_options', 'facebook-like-button', 'fbl_facebook_like_button', 'dashicons-facebook-alt', 20);
+}
 add_action('widgets_init', 'register_facebook_widget');
+add_action('admin_menu', 'fbl_admin_menu_info');
+
+
+function fbl_facebook_like_button() {
+    ?>
+    <div class="wrap">
+        <h2>Facebook Like Button Configuration</h2>
+    </div>
+    <?php
+}
