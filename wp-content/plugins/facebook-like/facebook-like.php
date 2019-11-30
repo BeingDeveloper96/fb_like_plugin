@@ -12,3 +12,11 @@ if(! defined('ABSPATH')) {
     exit('No Direct Access Allowed');
 }
 
+require_once(plugin_dir_path(__FILE__) . '/includes/add_scripts.php');
+require_once(plugin_dir_path(__FILE__) . '/includes/FB_Widget.php');
+
+function register_facebook_widget() {
+    register_widget('FB_Widget');
+}
+
+add_action('widgets_init', 'register_facebook_widget');
