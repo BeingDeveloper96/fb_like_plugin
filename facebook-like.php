@@ -30,6 +30,8 @@ function fbl_facebook_like_button() {
     ?>
     <div class="wrap">
         <h2>Facebook Like Button Configuration</h2>
+        <p>This is a small plugin that makes a Facebook Like button (generally for a FAcebook page) easier to configure.</p>
+        <p>You just need to install the plugin and configure basic options in Facebook Like Button widget.</p>
     </div>
     <?php
 }
